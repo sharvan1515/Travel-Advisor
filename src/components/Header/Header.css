@@ -1,0 +1,51 @@
+.title {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .title {
+        display: block;
+    }
+}
+
+.search {
+    position: relative;
+    border-radius: var(--theme-shape-borderRadius);
+    background-color: rgba(var(--theme-palette-common-white), 0.15);
+}
+
+.search:hover {
+    background-color: rgba(var(--theme-palette-common-white), 0.25);
+}
+
+.searchIcon {
+    padding: var(--theme-spacing-0) var(--theme-spacing-2);
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputRoot {
+    color: inherit;
+}
+
+.inputInput {
+    padding: var(--theme-spacing-1) var(--theme-spacing-1) var(--theme-spacing-1) var(--theme-spacing-0);
+    padding-left: calc(1em + var(--theme-spacing-4));
+    transition: var(--theme-transitions-create-width);
+    width: 100%;
+}
+
+@media (min-width: 960px) {
+    .inputInput {
+        width: 20ch;
+    }
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}
